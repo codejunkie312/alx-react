@@ -1,4 +1,5 @@
 # Folders
 **/node_modules/
 # Files
-**/dist/main.js
+main.js
+bundle.js
