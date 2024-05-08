@@ -1,0 +1,50 @@
+:root {
+  --main-color: #e11d3f;
+  --main-font: 'Open Sans', Helvetica, sans-serif;
+}
+
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.App-header {
+  width: 100%;
+  text-align: left;
+  border-bottom: 5px solid var(--main-color);
+  box-sizing: border-box;
+}
+
+.App-header h1 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-family: var(--main-font);
+}
+
+.App-header h1, .App-header img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.App-body {
+  text-align: left;
+}
+
+.App-body p {
+  padding-top: 30px;
+  padding-left: 30px;
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+
+.App-footer {
+  width: 99%;
+  border-top: 5px solid var(--main-color);
+  font-family: var(--main-font);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+}

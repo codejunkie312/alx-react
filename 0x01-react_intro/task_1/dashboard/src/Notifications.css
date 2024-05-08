@@ -1,0 +1,5 @@
+.Notifications {
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    padding: 0 10px;
+}
