@@ -22,24 +22,22 @@ module.exports = (env, argv) => {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(ong|svg|jpg|jpeg|gif)$/i,
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
         },
         {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-            },
-          },
+          use: 'babel-loader',
         },
       ],
     },
+    resolve: {
+      extensions: ['.js', '.jsx'],
+    },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './dist/index.html',
+        template: './src/index.html',
       }),
     ],
     devtool: 'inline-source-map',
