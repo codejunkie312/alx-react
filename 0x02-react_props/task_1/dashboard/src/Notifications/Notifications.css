@@ -1,0 +1,30 @@
+.Notifications {
+    border: 1px dashed var(--main-color);
+    padding: 0 10px;
+}
+
+button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+}
+
+button img {
+    width: 20px;
+}
+
+ul {
+    font-family: var(--main-font);
+    color: #ff0d01;
+}
+
+
+li[data-notification-type="default"] {
+    color: #360ea5;
+    font-weight: 700;
+}
+
+li[data-notification-type="urgent"] {
+    color: #ff0d01;
+    font-weight: 700;
+}
