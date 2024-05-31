@@ -1,6 +1,6 @@
 const { fromJS } = require('immutable');
 
-function getImmutableObject(obj) {
+function getImmutableObject (obj) {
   return fromJS(obj);
 }
 
