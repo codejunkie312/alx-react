@@ -1,9 +1,7 @@
-const { fromJS } = require('immutable');
+import { fromJS } from 'immutable';
 
-function accessImmutableObject (object, array) {
-  const immutableObject = fromJS(object);
-  const value = immutableObject.getIn(array);
-  return value instanceof Object ? value.toJS() : value;
+export default function accessImmutableObject(object, array) {
+  const mappedObj = fromJS(object);
+
+  return mappedObj.getIn(array, undefined);
 }
-
-module.exports = accessImmutableObject;
