@@ -1,0 +1,18 @@
+.App-header {
+    width: 100%;
+    text-align: left;
+    border-bottom: 5px solid var(--main-color);
+    box-sizing: border-box;
+}
+  
+.App-header h1 {
+    color: var(--main-color);
+    font-weight: bold;
+    font-family: var(--main-font);
+}
+  
+.App-header h1, .App-header img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}

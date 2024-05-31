@@ -1,0 +1,10 @@
+.App-footer {
+    width: 99%;
+    border-top: 5px solid var(--main-color);
+    font-family: var(--main-font);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+}
