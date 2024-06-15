@@ -6,15 +6,21 @@ import NotificationItem from "./NotificationItem";
 describe('Notifications', () => {
   let wrapper;
 
-  beforeEach(() => {
-    wrapper = shallow(<Notifications />);
-  });
-
   it('renders without crashing', () => {
+    wrapper = shallow(<Notifications />)
     expect(wrapper.exists()).toBe(true);
   });
 
+  it('renders div.menuItem when displayDrawer is false', () => {
+    expect(wrapper.find('.menuItem').length).toBe(1);
+    expect(wrapper.find('.Notifications').length).toBe(0);
+    expect(wrapper.find(NotificationItem).length).toBe(0)
+  })
+
   it('renders 3 list items', () => {
+    wrapper = shallow(<Notifications displayDrawer={true}/>)
+    expect(wrapper.find('.menuItem').length).toBe(1);
+    expect(wrapper.find('.Notifications').length).toBe(1);
     expect(wrapper.find(NotificationItem).length).toBe(3);
   });
 

@@ -1,0 +1,23 @@
+#CourseList {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+    border: 1px solid rgb(143, 139, 139);
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+th {
+    border-bottom: 2px solid rgb(143, 139, 139);
+    padding: 5px;
+}
+
+th[colspan="2"] {
+    text-align: center;
+}
+
+th, td {
+    width: 35%;
+    text-align: left;
+}

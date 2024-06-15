@@ -1,6 +1,13 @@
+.menuItem {
+    float: right;
+}
+
 .Notifications {
+    width: 30vh;
+    float: right;
     border: 1px dashed var(--main-color);
     padding: 0 10px;
+    clear: both;
 }
 
 button {
